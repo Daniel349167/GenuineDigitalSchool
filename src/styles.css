@@ -1,3 +1,150 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.sidebar {
+    width: 250px;
+}
+df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+}
+
+
+.background-image {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url('assets/images/diapo2/Rectangle51.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.foreground-image {
+    position: relative;
+    z-index: 1;
+}
+
+.foreground-image img {
+    margin-bottom: 10px;
+}
+
+.mission-vision-container {
+    background: linear-gradient(to top, #f0f4f8, #fff);
+}
+
+.bilingual-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.custom-button {
+    background-color: #133072;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #0a2252;
+}
+
+.section-title {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #133072;
+}
+
+.section-subtitle {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #133072;
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+.line-break {
+    display: block;
+    margin-top: -10px;
+}
+
+.world-section-title {
+    font-size: 60px;
+    line-height: 62px;
+    font-weight: 600;
+    color: #133072;
+    width: 286px;
+    margin-bottom: 2rem;
+}
+
+.world-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.world-section img {
+    margin-right: 20px;
+}
+
+.left-section {
+    width: 25%;
+}
+
+.right-section {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-container img {
+    margin: 10px 0;
+}
+
+.mission-title {
+    font-size: 52px;
+    font-weight: 600px;
+    line-height: 62px;
+    color: #133072;
+    width: 1311px;
+    margin: 0 auto;
+}
+
+.text-sidebar {
+    font-size: 18px;
+}
+

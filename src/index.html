@@ -1,44 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genuine Digital School</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Tailwind CSS -->
+    <link rel="icon" href="assets/images/logo.ico" type="image/x-icon">
+    <!-- Incluyendo el CSS de Tailwind y tus estilos personalizados -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="tailwind-output.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .mobile-image {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-content {
+                display: none;
+            }
+
+            .mobile-image {
+                display: block;
+            }
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <header class="bg-white shadow-md">
-        <nav class="container mx-auto p-4">
-            <!-- Menú de navegación -->
-        </nav>
-    </header>
-    <main class="container mx-auto p-4">
-        <!-- Sección principal -->
-        <section class="text-center">
-            <h1 class="text-4xl font-bold">Estás a punto de iniciar un viaje hacia el universo de la educación digital</h1>
-            <p class="mt-4 text-xl">Genuine Digital School</p>
-        </section>
-        <section class="mt-8 bg-white shadow-md rounded-lg p-8">
-            <!-- Nuestra misión y visión -->
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="text-2xl font-bold">Nuestra misión</h2>
-                    <p class="mt-2">Educar, empoderar y conectar a nuestros estudiantes...</p>
+
+<body class="bg-white">
+    <!-- Main Content -->
+    <div class="desktop-content">
+        <div id="inicio" class="relative w-full h-screen bg-white overflow-hidden">
+            <img src="assets/images/diapo1/family.jpg" alt="Family learning" class="w-full h-full object-cover">
+            <!-- Sidebar -->
+            <div class="absolute top-4 right-4 bg-white p-6 shadow-lg rounded-lg sidebar">
+                <div class="mb-4 flex justify-end" style="padding-right: 10px;">
+                    <img src="assets/images/diapo1/logo.jpg" alt="Genuine Logo" class="h-12">
                 </div>
-                <div class="col-md-6">
-                    <h2 class="text-2xl font-bold">Nuestra visión</h2>
-                    <p class="mt-2">Convertirnos en líderes en educación digital...</p>
+                <nav class="space-y-4">
+                    <a href="#inicio" class="block text-sidebar text-blue-500">Inicio</a>
+                    <a href="#quienes-somos" class="block text-sidebar text-blue-500">¿Quiénes somos?</a>
+                    <a href="#somos-estadounidenses" class="block text-sidebar text-blue-500">Somos Estadounidenses</a>
+                    <a href="#unete" class="block text-sidebar text-blue-500">Únete a Genuine</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Misión y Visión -->
+        <div id="quienes-somos" class="relative p-8 background-image">
+            <div class="foreground-image text-center mb-8">
+                <img src="assets/images/diapo2/Jet-pack 1.png" alt="Jet Pack" class="mx-auto mb-4">
+                <h2 class="mission-title highlight">Nuestra misión en el mundo y lo que soñamos<span class="line-break"></span> para tus hijos</h2>
+            </div>
+            <div class="flex justify-center mb-4">
+                <img src="assets/images/diapo2/Frame 173.png" alt="Misión y Visión" class="w-full h-auto" style="width: 1300px;">
+            </div>
+        </div>
+
+        <!-- Sección de Bilingüismo -->
+        <div id="somos-estadounidenses" class="w-full px-8 py-8">
+            <div class="bilingual-section flex">
+                <div class="w-1/2 flex flex-col justify-center">
+                    <div class="text-left" style="padding-bottom: 20px; padding-left: 60px;">
+                        <h2 class="section-title">De Estados Unidos para <span class="line-break"></span> el mundo</h2>
+                        <p class="section-subtitle">
+                            Nuestro colegio digital privado está constituido y<span class="line-break"></span>
+                            registrado en Estados Unidos ante el <span class="highlight">Florida<span class="line-break"></span> Department of Education con el código 8822.</span>
+                        </p>
+                        <div class="flex items-center">
+                            <span class="mr-4 highlight" style="font-size: 22px; color: #133072;">Conoce el nuestro aquí</span>
+                            <a href="https://studyatgenuine.com/registro-legal/" target="_blank" class="custom-button" style="font-size: 20px; margin-left: 10px;">
+                                Registro legal
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/diapo3/foto.png" alt="Foto Bilingüismo" class="w-1/2 h-auto">
+            </div>
+        </div>
+
+        <!-- Sección Somos del Mundo -->
+        <div id="unete" class="w-full px-8 py-8 flex" style="padding-left: 80px;">
+            <div class="left-section">
+                <h2 class="world-section-title" style="line-height: 70px;">Somos<span class="line-break"></span> del Mundo</h2>
+                <img src="assets/images/diapo4/frame.png" alt="Países">
+            </div>
+            <div class="right-section">
+                <div class="stats-container">
+                    <img src="assets/images/diapo4/numeros.png" alt="+400 Estudiantes, 28 Staff, 44 Profesores">
+                    <img src="assets/images/diapo4/Mapa.png" alt="Mapa del Mundo">
                 </div>
             </div>
-        </section>
-        <!-- Más secciones -->
-    </main>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </div>
+    </div>
+
+
+
+    <!-- Mobile Version -->
+    <div class="mobile-content">
+    
+        <img src="assets/images-mobile/seccion1.png" alt="Mobile version" class="mobile-image">
+    </div>
+
+    <!-- Dialogflow Messenger -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger location="us-central1" project-id="dialogflowproject-431122"
+        agent-id="3ffd8981-2eff-41c8-bbb6-54f11acb8cd2" language-code="es" max-query-length="-1">
+        <df-messenger-chat-bubble chat-title="AgenteDialogFlow">
+        </df-messenger-chat-bubble>
+    </df-messenger>
+    <script>
+        $(document).ready(function() {
+            function checkScreenWidth() {
+                if ($(window).width() <= 768) {
+                    $('.desktop-content').hide();
+                    $('.mobile-content').show();
+                } else {
+                    $('.desktop-content').show();
+                    $('.mobile-content').hide();
+                }
+            }
+
+            checkScreenWidth();
+            $(window).resize(checkScreenWidth);
+        });
+    </script>
 </body>
+
 </html>
