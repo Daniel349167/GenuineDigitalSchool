@@ -6,6 +6,7 @@ Este proyecto es una implementación de una interfaz web basada en un diseño de
 
 - **HTML**
 - **Tailwind CSS**
+- **JavaScript**
 - **Dialogflow** (Integrado con un chatbot)
 
 ## Ejecución del Proyecto
