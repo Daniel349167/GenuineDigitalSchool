@@ -19,7 +19,9 @@ src/index.html
 ## Integración con Chatbot
 El proyecto está integrado con un chatbot de Dialogflow. Sin embargo, debido a problemas de CORS, para probar esta funcionalidad debes desplegar el proyecto en una plataforma como Vercel u otra similar.
 
+## Responsive
+El proyecto está optimizado tanto para dispositivos móviles como para escritorio.
+
+## Despliegue en Vercel
 [https://prueba-web-tailwild.vercel.app](https://prueba-web-tailwild.vercel.app)
-
-
 
