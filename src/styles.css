@@ -22,8 +22,9 @@ df-messenger {
 .background-image {
     position: relative;
     padding: 20px;
+    padding-top: 40px;
     border-radius: 10px;
-    background-image: url('assets/images/diapo2/Rectangle51.png');
+    background-image: url('assets/images/diapo2/Rectangle 51.png');
     background-size: cover;
     background-position: center;
 }
@@ -120,6 +121,7 @@ df-messenger {
 
 .right-section {
     width: 75%;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
