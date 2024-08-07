@@ -150,3 +150,120 @@ df-messenger {
     font-size: 18px;
 }
 
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+.mobile-image {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .desktop-content {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+        width: 100%;
+    }
+
+    .section-background {
+        background-image: url('assets/images-mobile/seccion2/Rectangle.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .section-text {
+        padding-top: 30px !important;
+        color: #133072;
+        font-size: 27px;
+        line-height: 27px;
+        padding: 20px;
+    }
+
+    .conten-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .btn-registro {
+        display: inline-block;
+        background-color: #133072;
+        color: white;
+        padding: 20px 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .btn-registro:hover {
+        background-color: #0a204f;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-content-bottom {
+        font-size: 17px;
+    }
+
+    .section-content-bottom2 {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .section3mobile {
+        padding: 20px;
+    }
+
+
+    .conten-mobile2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 40px 0px;
+    }
+
+    .play-button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 50px;
+        /* Ajusta el tamaño según sea necesario */
+    }
+
+    .section-content-bottom3 {
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #133072;
+    }
+
+    .seccion4 {
+        padding: 20px 60px;
+
+    }
+
+    .seccion4 h2 {
+        font-size: 27px;
+        line-height: 27px;
+        color: #133072;
+    }
+
+    .seccion4 img {
+        text-align: center;
+        margin: 20px auto;
+        width: 100%;
+    }
+}
