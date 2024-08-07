@@ -12,7 +12,7 @@
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet"
         href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
@@ -20,7 +20,6 @@
         }
 
         .mobile-image {
-            display: none;
             width: 100%;
             height: auto;
         }
@@ -33,12 +32,110 @@
             .mobile-image {
                 display: block;
             }
+
+            .section-background {
+                background-image: url('assets/images-mobile/seccion2/Rectangle.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .section-text {
+                padding-top: 30px !important;
+                color: #133072;
+                font-size: 27px;
+                line-height: 27px;
+                padding: 20px;
+            }
+
+            .conten-mobile {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-top: 40px;
+            }
+
+            .btn-registro {
+                display: inline-block;
+                background-color: #133072;
+                color: white;
+                padding: 20px 30px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 10px;
+                transition: background-color 0.3s ease;
+                margin-top: 10px;
+                font-size: 20px;
+            }
+
+            .btn-registro:hover {
+                background-color: #0a204f;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .section-content-bottom {
+                font-size: 17px;
+            }
+
+            .section-content-bottom2 {
+                font-size: 20px;
+                display: block;
+                text-align: center;
+            }
+
+            .section3mobile {
+                padding: 20px;
+            }
+
+
+            .conten-mobile2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin: 40px 0px;
+            }
+
+            .play-button {
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+                width: 50px;
+                /* Ajusta el tamaño según sea necesario */
+            }
+
+            .section-content-bottom3 {
+                font-size: 20px;
+                line-height: 20px;
+                text-align: center;
+                color: #133072;
+            }
+
+            .seccion4 {
+                padding: 20px 60px;
+
+            }
+
+            .seccion4 h2 {
+                font-size: 27px;
+                line-height: 27px;
+                color: #133072;
+            }
+
+            .seccion4 img {
+                text-align: center;
+                margin: 20px auto;
+                width: 100%;
+            }
         }
     </style>
 </head>
 
 <body class="bg-white">
-    <!-- Main Content -->
+    <!-- Deskop version -->
     <div class="desktop-content">
         <div id="inicio" class="relative w-full h-screen bg-white overflow-hidden">
             <img src="assets/images/diapo1/family.jpg" alt="Family learning" class="w-full h-full object-cover">
@@ -60,10 +157,12 @@
         <div id="quienes-somos" class="relative p-8 background-image">
             <div class="foreground-image text-center mb-8">
                 <img src="assets/images/diapo2/Jet-pack 1.png" alt="Jet Pack" class="mx-auto mb-4">
-                <h2 class="mission-title highlight">Nuestra misión en el mundo y lo que soñamos<span class="line-break"></span> para tus hijos</h2>
+                <h2 class="mission-title highlight">Nuestra misión en el mundo y lo que soñamos<span
+                        class="line-break"></span> para tus hijos</h2>
             </div>
             <div class="flex justify-center mb-4">
-                <img src="assets/images/diapo2/Frame 173.png" alt="Misión y Visión" class="w-full h-auto" style="width: 1300px;">
+                <img src="assets/images/diapo2/Frame 173.png" alt="Misión y Visión" class="w-full h-auto"
+                    style="width: 1300px;">
             </div>
         </div>
 
@@ -75,11 +174,14 @@
                         <h2 class="section-title">De Estados Unidos para <span class="line-break"></span> el mundo</h2>
                         <p class="section-subtitle">
                             Nuestro colegio digital privado está constituido y<span class="line-break"></span>
-                            registrado en Estados Unidos ante el <span class="highlight">Florida<span class="line-break"></span> Department of Education con el código 8822.</span>
+                            registrado en Estados Unidos ante el <span class="highlight">Florida<span
+                                    class="line-break"></span> Department of Education con el código 8822.</span>
                         </p>
                         <div class="flex items-center">
-                            <span class="mr-4 highlight" style="font-size: 22px; color: #133072;">Conoce el nuestro aquí</span>
-                            <a href="https://studyatgenuine.com/registro-legal/" target="_blank" class="custom-button" style="font-size: 20px; margin-left: 10px;">
+                            <span class="mr-4 highlight" style="font-size: 22px; color: #133072;">Conoce el nuestro
+                                aquí</span>
+                            <a href="https://studyatgenuine.com/registro-legal/" target="_blank" class="custom-button"
+                                style="font-size: 20px; margin-left: 10px;">
                                 Registro legal
                             </a>
                         </div>
@@ -92,7 +194,8 @@
         <!-- Sección Somos del Mundo -->
         <div id="unete" class="w-full px-8 py-8 flex" style="padding-left: 80px;">
             <div class="left-section">
-                <h2 class="world-section-title" style="line-height: 70px;">Somos<span class="line-break"></span> del Mundo</h2>
+                <h2 class="world-section-title" style="line-height: 70px;">Somos<span class="line-break"></span> del
+                    Mundo</h2>
                 <img src="assets/images/diapo4/frame.png" alt="Países">
             </div>
             <div class="right-section">
@@ -103,24 +206,79 @@
             </div>
         </div>
     </div>
-
-
-
     <!-- Mobile Version -->
     <div class="mobile-content">
-    
-        <img src="assets/images-mobile/seccion1.png" alt="Mobile version" class="mobile-image">
+        <!-- sección1 -->
+        <img src="assets/images-mobile/seccion1/seccion1.png" alt="Mobile version" class="mobile-image">
+        <!-- sección2 -->
+        <div class="section-background">
+            <div class="section-text highlight">
+                <p>Nuestra misión en el mundo y lo que soñamos para tus hijos</p>
+            </div>
+            <div>
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/0IlUVfWThdo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="conten-mobile">
+                <img src="assets/images-mobile/seccion2/Frame.png" alt="Mobile version" class="mobile-image"
+                    style="width: 80%;">
+            </div>
+            <img src="assets/images-mobile/seccion2/Jet-pack.png" alt="Mobile version" class="mobile-image"
+                style="width: 100%;">
+        </div>
+        <!-- sección3 -->
+        <div class="section3mobile">
+            <div class="section-content" style="color: #133072; font-size: 16px; line-height: 16.8px;">
+                <p class="section-title highlight">¿Quiénes somos?</p>
+                <p class="section-content-bottom">Somos un colegio virtual privado estadounidense constituido y
+                    registrado en el estado de <span class="highlight">La Florida con el código 8822.</span></p>
+                <div class="conten-mobile2">
+                    <p class="section-content-bottom2 highlight">Consulta el registro legal aquí</p>
+                    <a href="https://studyatgenuine.com/registro-legal/" target="_blank"
+                        class="btn-registro highlight">Registro
+                        legal</a>
+                </div>
+            </div>
+            <div style="background-color: #D5ADFB; padding:15px 20px; border-radius: 12px;">
+                <p class="section-content-bottom3" style="font-weight: 500;">Mira como encontrar el <br>registro legal
+                    de <span style="font-weight: 600;">Genuine</span></p>
+                <a href="https://www.youtube.com/watch?v=r0HVCFzrJnU&t=2s" target="_blank">
+                    <img src="assets/images-mobile/seccion3/play.png" alt="Play button" class="play-button">
+                </a>
+            </div>
+
+        </div>
+        <img src="assets/images-mobile/seccion3/gente.png" alt="Mobile version" class="mobile-image"
+            style="width: 100%; margin: 20px auto;">
+
+        <!-- sección4 -->
+        <div class="seccion4">
+            <h2 class="highlight">Somos <br>del mundo</h2>
+            <img src="assets/images-mobile/seccion4/Numeros.png" alt="Numeros">
+        </div>
+
+        <img src="assets/images-mobile/seccion4/Mapa.png" alt="Mobile version" class="mobile-image"
+            style="width: 100%;">
+        <img src="assets/images-mobile/seccion4/Frame1.png" alt="Mobile version" class="mobile-image"
+            style="width: 100%;">
+        <img src="assets/images-mobile/seccion4/Frame2.png" alt="Mobile version" class="mobile-image"
+            style="width: 100%;">
+        <img src="assets/images-mobile/seccion4/Frame3.png" alt="Mobile version" class="mobile-image"
+            style="width: 100%;">
+
     </div>
+
 
     <!-- Dialogflow Messenger -->
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
     <df-messenger location="us-central1" project-id="dialogflowproject-431122"
         agent-id="3ffd8981-2eff-41c8-bbb6-54f11acb8cd2" language-code="es" max-query-length="-1">
-        <df-messenger-chat-bubble chat-title="AgenteDialogFlow">
-        </df-messenger-chat-bubble>
+        <df-messenger-chat-bubble chat-title="AgenteDialogFlow"></df-messenger-chat-bubble>
     </df-messenger>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             function checkScreenWidth() {
                 if ($(window).width() <= 768) {
                     $('.desktop-content').hide();
